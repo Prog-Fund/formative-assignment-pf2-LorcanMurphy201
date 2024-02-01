@@ -5,7 +5,7 @@
  * @version 2.2
  */
 
-public class Store {
+public class  Store {
 
     private Product[] products;
     private int total = 0;  //dual purpose. 1) number of items stored in array, 2) next available index location
