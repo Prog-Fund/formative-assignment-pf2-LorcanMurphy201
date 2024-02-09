@@ -14,6 +14,9 @@ public class Product {
     private double unitCost;  //valid values are any positive number - default to 1
 
     private boolean inCurrentProductLine;   // no validation required. Default
+
+
+
     /**
      * Constructor for objects of class Product
      * @param productName Name of the product
@@ -23,9 +26,7 @@ public class Product {
 
 
     public Product(String productName, int productCode, double unitCost, boolean inCurrentProductLine) {
-       this.productName = productName;
-       this.productCode = productCode;
-       this.unitCost = unitCost;
+    setProductCode(productCode);
     }
 
     //-------
@@ -99,8 +100,8 @@ public class Product {
     //  "Product description: Flatscreen TV  product code: 2000  unit cost: 1000 and currently in product line: Y"
 
     {
-        return "Product description: " + (productName) ;
 
+        return "Product description: " + productName + ", product code: " + productCode + ", unit cost: " + unitCost + ", currently in product line: " + (inCurrentProductLine ? 'Y' : 'N');
 
     }
 
