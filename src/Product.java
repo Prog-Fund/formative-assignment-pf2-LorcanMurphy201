@@ -9,7 +9,7 @@ public class Product {
                                     // When constructor is called, if the name is >20 chars, you should
                                     // only store the first 20 characters (Hint: use substr())
 
-    private int productCode ;  // valid values 1000 - 5000 inclusive - default value is 5000
+    private int productCode;  // valid values 1000 - 5000 inclusive - default value is 5000
 
     private double unitCost;  //valid values are any positive number - default to 1
 
@@ -20,6 +20,8 @@ public class Product {
      * @param productCode Code of the product
      * @param unitCost Unit cost of the product - valid values are any positive number
      */
+
+
     public Product(String productName, int productCode, double unitCost, boolean inCurrentProductLine) {
        this.productName = productName;
        this.productCode = productCode;
@@ -46,8 +48,7 @@ public class Product {
     /**
      * Returns the Product Code
      */
-    public int getProductCode() {
-        return productCode;
+    public int getProductCode() {return productCode;
     }
 
     /**
@@ -98,7 +99,9 @@ public class Product {
     //  "Product description: Flatscreen TV  product code: 2000  unit cost: 1000 and currently in product line: Y"
 
     {
-        return "TO DO WRITE TOSTRING";
+        return "Product description: " + (productName) ;
+
+
     }
 
 }
