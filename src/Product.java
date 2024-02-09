@@ -5,13 +5,13 @@
  */
 public class Product {
 
-    private String productName ;    // max length = 20 characters, default value is "".
+    private String productName = "" ;    // max length = 20 characters, default value is "".
                                     // When constructor is called, if the name is >20 chars, you should
                                     // only store the first 20 characters (Hint: use substr())
 
-    private int productCode;  // valid values 1000 - 5000 inclusive - default value is 5000
+    private int productCode = 4000;  // valid values 1000 - 5000 inclusive - default value is 5000
 
-    private double unitCost;  //valid values are any positive number - default to 1
+    private double unitCost = 2000;  //valid values are any positive number - default to 1
 
     private boolean inCurrentProductLine;   // no validation required. Default
 
@@ -23,11 +23,13 @@ public class Product {
      * @param productCode Code of the product
      * @param unitCost Unit cost of the product - valid values are any positive number
      */
-
-
     public Product(String productName, int productCode, double unitCost, boolean inCurrentProductLine) {
-    setProductCode(productCode);
+        this.productName = productName;
+        this.productCode = productCode;
+        this.unitCost = unitCost;
+        this.inCurrentProductLine = inCurrentProductLine;
     }
+
 
     //-------
     //getters
